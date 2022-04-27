@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lghtblue: '#00A7E1',
+                        drkblue: '#111C4E',
+                        lghtyellow: '#F6F6F6'
+                    },
+                    fontFamily: {
+                        heebo: ['Heebo']
+                    },
+                    height: {
+                        '128': '600px',
+                    },
+                    scale: {
+                        flip: '-1',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="relative font-heebo overflow-hidden">
+
+
+        <section>
+            <div class="w-full fixed top-0 left-0 z-50 shadow-md">
+                <nav class=" flex justify-between py-3 px-4 md:px-28  bg-white">
+                    <a href="/">
+                        <img class="h-12" src="img/logo.png" alt="">
+                    </a>
+
+                    <div class="flex justify-between items-center">
+                        <ul class="hidden md:flex text-gray-500 text-xs  uppercase text-center">
+                            <li class="mr-8 hover:text-lghtblue"><a href="#">Home</a></li>
+                            <li class="mr-8 hover:text-lghtblue"><a href="#">Product</a></li>
+                            <li class="mr-8 hover:text-lghtblue"><a href="#">About Us</a></li>
+                            <li class="mr-8 hover:text-lghtblue"><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </a></li>
+                        </ul>
+
+
+                        <div class="px-4 cursor-pointer md:hidden" id="burger" @click="isClosed=!isClosed">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
+
+        </section>
+
+        <section>
+
+            <section>
+                <div class="w-full h-128 lg:h-screen relative flex justify-center">
+
+                    <div class="w-full h-full bg-blue-900 opacity-50 absolute top-0 z-2 "></div>
+
+                    <video autoplay muted loop class="w-full object-cover ">
+                        <source src="img/My-Movie-3-1.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="absolute bottom-0 z-4 hidden md:block">
+                        <img src="img/img2.png" alt="">
+                    </div>
+
+                    <div class="absolute bottom-0 z-4 w-2/3 md:hidden">
+                        <img src="img/img6.png" alt="">
+                    </div>
+
+                    <div
+                        class=" absolute top-40 md:left-28 xl:top-52 xl:left-44 text-white text-center md:text-left flex flex-col justify-center">
+                        <h1 class="text-4xl md:text-6xl font-bold [text-shadow:0_4px_8px_rgba(0,0,0,0.4)]">TRANSFORMING
+                            <br> MEDICAL BILLING</h1>
+                        <h3 class="text-xl md:text-2xl mt-4 [text-shadow:0_4px_8px_rgba(0,0,0,0.3)]">
+                            BY PUTTING THE POWER INTO <br>
+                            THE PROVIDERS HANDS.</h3>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <selection>
+                <div
+                    class="w-full  relative text-center py-28  px-4 text-xl leading-7 bg-white md:px-48 md:text-4xl md:font-semibold">
+                    <h1 class="text-drkblue">Hospitals are <span class="font-bold">losing 6-9%</span> of their revenue
+                        due to leakages in the billing process.</h1>
+                    <div class="w-full bg-white">
+                        <img class="w-16 my-12 mx-auto" src="img/img3.png" alt="">
+                    </div>
+                    <h1 class="text-lghtblue ">MedoSync stops these leakages by creating the invoice in real time and
+                        ensures hospitals get paid in full.</h1>
+                </div>
+
+            </selection>
+
+
+
+            <section>
+                <div
+                    class="relative h-fit w-full bg-cover bg-[url('img/img5.jpg')]  md:bg-[url('img/img4.jpg')] p-2 group">
+
+                    <h1
+                        class="text-center text-xl md:text-2xl lg:absolute xl:right-32 lg:right-16 lg:top-60 text-white m-6 [text-shadow:0_4px_8px_rgba(0,0,0,0.5)]">
+                        HOSPITALS AREN'T REALISING THEIR MAXIMUM <br class="hidden md:block">
+                        REVENUE DUE TO THE COMPLEXITY OF <br class="hidden md:block">
+                        MEDICAL BILLING.</h1>
+
+                    <div>
+
+                        <div class="mx-auto lg:mx-0  md:w-96 p-6 shadow-md bg-white relative mb-1 text-center md:text-left ">
+                            <h1 class="uppercase font-bold text-gray-800">SILOED SYSTEMS</h1>
+                            <p class="text-gray-500 mt-4">Systems don't speak to each other <br> meaning there is a
+                                duplication of work.</p>
+                            <img class="w-8  absolute top-6 right-6 hidden md:block " src="img/layer1.png" alt="">
+                        </div>
+
+                        <div
+                            class="mx-auto lg:mx-0 md:w-96 p-6 shadow-md bg-white relative mb-1  text-center md:text-left transform xl:group-hover:translate-x-[6rem] transition ease-in-out  duration-1000">
+                            <h1 class="uppercase font-bold text-gray-800">MANUAL PROCESSES</h1>
+                            <p class="text-gray-500 mt-4">The billing process involves repetitive <br> tasks that are
+                                done manually resulting in <br> human error.</p>
+                            <img class="w-8  absolute top-6 right-6 hidden md:block" src="img/layer2.png" alt="">
+                        </div>
+
+                        <div
+                            class="mx-auto lg:mx-0 md:w-96 p-6 shadow-md bg-white relative mb-1 text-center md:text-left transform xl:group-hover:translate-x-[12rem] transition ease-in-out  duration-1000">
+                            <h1 class="uppercase font-bold text-gray-800">TIME</h1>
+                            <p class="text-gray-500 mt-4">All of this adds up to a significant <br> amount of time just
+                                generating the <br> invoice.</p>
+                            <img class="w-8  absolute top-6 right-6 hidden md:block" src="img/layer3.png" alt="">
+                        </div>
+
+                        <div
+                            class="mx-auto lg:mx-0 md:w-96 p-6 shadow-md bg-white relative mb-1 text-center md:text-left transform xl:group-hover:translate-x-[18rem] transition ease-in-out  duration-1000">
+                            <h1 class="uppercase font-bold text-gray-800">REJECTIONS</h1>
+                            <p class="text-gray-500 mt-4">And numerous rejections from insurers <br> that could have
+                                been caught before submission.</p>
+                            <img class="w-8  absolute top-6 right-6 hidden md:block" src="img/layer4.png" alt="">
+                        </div>
+
+                        <div
+                            class="mx-auto lg:mx-0 md:w-96 p-6 shadow-md bg-white relative mb-6 text-center md:text-left transform xl:group-hover:translate-x-[24rem] transition ease-in-out  duration-1000">
+                            <h1 class="uppercase font-bold text-gray-800">SECURITY</h1>
+                            <p class="text-gray-500 mt-4">The current process involves important <br> data that needs to
+                                be handled in a GDPR <br> compliant manner.</p>
+                            <img class="w-8  absolute top-6 right-6 hidden md:block" src="img/layer5.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <selection>
+                <div class="py-16 md:py-28  px-2 relative text-center">
+
+                    <h1 class="text-drkblue  text-lg md:text-3xl font-semibold">REAL-TIME BILLING MEANS NECESSARY DATA
+                        IS CAPTURED THROUGHOUT <br>
+                        THE PATIENT JOURNEY AND THE BILL IS READY UPON DISCHARGE.</h1>
+
+                    <p class="text-gray-900 text-xs md:text-sm font-semibold my-6">
+                        MedoSync is already working with providers and payers across Ireland
+                    </p>
+
+
+                    <div class="w-full bg-white my-4">
+                        <img class="mx-auto" src="img/img7.png" alt="">
+                    </div>
+
+                    <p class="text-xs text-gray-800  font-bold italic">And backed by</p>
+
+                    <div class="w-full bg-white my-4 ">
+                        <img class="mx-auto" src="img/img8.png" alt="">
+                    </div>
+
+                </div>
+
+            </selection>
+
+
+
+            <section>
+                <div
+                    class=" px-2 w-full h-fit py-20 lg:h-screen bg-cover bg-[url('img/img10.png')] md:bg-[url('img/img9.jpg')] bg-center relative group">
+                    <div class="w-full h-full bg-sky-500 opacity-50 absolute top-0 left-0 z-2 hidden md:block"></div>
+
+                    <img class="mb-10 md:hidden" src="img/img6.png" alt="">
+
+                    <div class="relative text-center md:text-left text-5xl lg:top-1/4 md:left-1/2 ">
+                        <h1
+                            class="text-white md:text-7xl md:text-drkblue font-bold transform lg:group-hover:text-8xl transition-all ease-in-out  duration-1000">
+                            SIMPLE</h1>
+                        <h2
+                            class="text-sky-200 md:text-6xl md:text-white  md:font-semibold [text-shadow:0_4px_8px_rgba(0,0,0,0.2)] transform lg:group-hover:text-7xl transition-all ease-in-out   duration-1000">
+                            HEALTHCARE <br>
+                            PAYMENTS</h2>
+                    </div>
+
+                    <svg class="h-20 w-full rotate-180 scale-x-flip fill-lghtyellow  absolute left-0 bottom-0 "
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                        <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                    c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                    c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                    </svg>
+
+                </div>
+
+            </section>
+
+
+            <selection>
+                <div
+                    class="w-full text-center text-drkblue font-semibold uppercase bg-lghtyellow py-28 px-4 md:px-48 relative">
+                    <h1 class="text-3xl">SINCE JANUARY 2021</h1>
+                    <h2 class="text-2xl">MEDOSYNC HAS PROCESSED MORE THAN</h2>
+
+                    <h1 class="text-lghtblue text-8xl m-6 animate-pulse">148</h1>
+
+                    <h1 class="text-lg">Per day</h1>
+
+                    <svg class="h-20 w-full rotate-180 scale-x-flip fill-white  absolute left-0 bottom-0 "
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                        <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                    c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                    c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                    </svg>
+
+                </div>
+
+            </selection>
+
+
+
+            <section>
+                <div class="py-16 md:py-28  px-2 relative text-center">
+                    <h1 class="text-5xl font-bold text-lghtblue">HOW WE HELP PROVIDERS</h1>
+                    <img class="mx-auto mt-16 w-2/3 hidden md:block" src="img/img1.png" alt="">
+
+                    <div class=" text-center md:hidden">
+                        <div class="pt-10">
+                            <img class="mx-auto mb-6" src="img/thumbs/1.png" alt="">
+                            <p>INTEGRATES WITH YOUR PAS</p>
+                        </div>
+                        <div class="pt-10">
+                            <img class="mx-auto mb-6" src="img/thumbs/2.png" alt="">
+                            <p>AUTOMATION ELIMINATES HUMAN ERROR</p>
+                        </div>
+                        <div class="pt-10">
+                            <img class="mx-auto mb-6" src="img/thumbs/3.png" alt="">
+                            <p>HIGHEST LEVELS OF SECURITY</p>
+                        </div>
+                        <div class="pt-10">
+                            <img class="mx-auto mb-6" src="img/thumbs/4.png" alt="">
+                            <p>REAL-TIME INSURER INTEGRATION</p>
+                        </div>
+                        <div class="pt-10">
+                            <img class="mx-auto mb-6" src="img/thumbs/5.png" alt="">
+                            <p>REAL-TIME REPORTING</p>
+                        </div>
+                        <div class="pt-10">
+                            <img class="mx-auto mb-6" src="img/thumbs/6.png" alt="">
+                            <p>IDENTIFIES LEAKAGES</p>
+                        </div>
+                        <div class="pt-10">
+                            <img class="mx-auto my-6" src="img/thumbs/7.png" alt="">
+                        </div>
+                    </div>
+
+                    <p class="text-xl font-bold text-lghtblue md:absolute bottom-30 right-1/4">MAXIMISES INCOME</p>
+
+                    <svg class="h-20 w-full rotate-180 scale-x-flip fill-sky-600  absolute left-0 bottom-0 "
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                        <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                    c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                    c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                    </svg>
+
+                </div>
+
+            </section>
+
+
+
+            <section>
+                <div class="text-center py-32 px-4 font-semibold text-drkblue text-2xl">
+                    <h3 class="leading-6">By utilising the existing data in a provider's system, Medosync were able to
+                        identify</h3>
+                    <h1 class="text-5xl text-sky-600 my-5 ">LEAKAGES OF 3%</h1>
+                    <h3>in unrealised revenue</h3>
+                    <img class="mx-auto mt-12 w-32" src="img/img3.png" alt="">
+                </div>
+
+            </section>
+
+
+
+            <selection>
+                <div
+                    class="relative flex flex-col items-center justify-center h-fit py-12 px-6 md:p-20 overflow-hidden">
+                    <div class="w-full h-full bg-sky-700 opacity-70 absolute top-0 z-20 "></div>
+
+                    <video autoplay muted loop class="absolute w-auto min-w-full  min-h-full max-w-none">
+                        <source src="img/video_2.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="text-center text-white font-semibold relative z-30">
+                        <h1 class="text-xl md:text-4xl mb-6">WE WANT TO HEAR MORE <br>
+                            ABOUT YOUR CHALLENGES</h1>
+
+                        <p class="text-xs md:text-xl">Please fill in the form and one of our team will be in touch</p>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-20 md:w-20 mx-auto mt-6"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+
+                    </div>
+
+                    <div class="w-full  md:pb-14 px-6 lg:px-24 sm:px-10 lg:col-span-2  relative z-30">
+
+                        <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                            <div>
+                                <div class="mt-1">
+                                    <input placeholder="Name" type="text" name="first-name" autocomplete="given-name"
+                                        class="py-3 px-4 block w-full shadow-sm focus:outline-none rounded-md" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mt-1">
+                                    <input placeholder="Email" type="text" name="last-name" autocomplete="family-name"
+                                        class="py-3 px-4 block w-full shadow-sm focus:outline-none rounded-md" />
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <div class="mt-1">
+                                    <input placeholder="Company" type="text" name="subject"
+                                        class="py-3 px-4 block w-full shadow-sm focus:outline-none rounded-md" />
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                
+                                <div class="mt-1">
+                                    <textarea placeholder="Message" name="message" rows="4"
+                                        class="py-3 px-4 block w-full shadow-sm focus:outline-none rounded-md"
+                                        aria-describedby="message-max"></textarea>
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2 sm:flex sm:justify-end">
+                                <button type="submit"
+                                    class="mt-2 w-full inline-flex items-center uppercase justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-500 hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto">Send
+                                    message</button>
+                            </div>
+                    </div>
+
+                </div>
+
+            </selection>
+
+
+        </section>
+
+        <selection>
+
+            <footer
+                class="w-full text-center flex flex-col lg:flex-row md:justify-between bg-drkblue px-8 md:px-28 py-10 text-white text-xs ">
+
+                <div class=" w-full lg:w-1/3 font-semibold uppercase flex justify-around my-2">
+                    <a href="#">Home</a>
+                    <a href="#">Product</a>
+                    <a href="#">Our story</a>
+                    <a href="#">Meet the team</a>
+                </div>
+
+                <p class="my-2">&copy; MedoSync. Dogpatch Labs, The CHQ Building, Custom House Quay, Dublin 1, Ireland
+                </p>
+            </footer>
+
+        </selection>
+
+    </div>
+</body>
+
+</html>
